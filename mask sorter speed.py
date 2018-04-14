@@ -25,7 +25,7 @@ sorted_d = sorted(d.items(), key=operator.itemgetter(1))
 
 f = open(output_hcmask, "w")
 for mask in sorted_d:
-    if mask[0].count("?") > min_guess:
+    if mask[0].count("?") >= min_guess:
         f.write("{0}\n".format(mask[0]))
 
 f.close()
