@@ -2,7 +2,7 @@ import operator
 
 input_hcmask = "input.hcmask"       # input file
 output_hcmask = "output.hcmask"     # output file
-min_guess = 0                       # min amount of ?
+min_guess = 0                       # min amount of ? (= 0 to parse all masks)
 
 def masktosize(s):
     i = 1
